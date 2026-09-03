@@ -1,0 +1,41 @@
+1.Django es un framework de desarrollo web de código abierto escrito en Python. 
+Fue creado para facilitar el desarrollo rápido y eficiente de aplicaciones web robustas y seguras. 
+Desde su lanzamiento en 2005, Django ha ganado popularidad por su enfoque en la reutilización de componentes y su filosofía de «baterías incluidas», lo que significa que viene con muchas funcionalidades integradas para simplificar el proceso de desarrollo.
+El framework fue diseñado por el equipo de desarrolladores de Lawrence Journal-World, con el objetivo de resolver problemas comunes en el desarrollo web.
+
+2.El patrón **Modelo-Vista-Controlador (MVC)** es una arquitectura de software que separa una aplicación en tres capas independientes para facilitar el mantenimiento y la reutilización de código:
+
+* **Modelo (M):** Gestiona la lógica de datos y la comunicación con la base de datos a través de un ORM.
+* **Vista (V):** Corresponde a la interfaz de usuario (Frontend) y se encarga de presentar los datos procesados.
+* **Controlador (C):** Intermediario del backend que procesa la lógica de negocio; recibe la solicitud del usuario mediante una ruta o URL, consulta los datos al Modelo y se los entrega a la Vista.
+
+Frameworks populares como Laravel y CodeIgniter aplican este patrón, mientras que otros como Django utilizan variaciones adaptadas (como el modelo MTV).
+
+3.Una app en Django es un módulo de código independiente que cumple una función en un sitio web. Cada app agrupa sus propios archivos de lógica, base de datos
+y diseño por separado, se pueden tomar y usar en proyectos distintos y facilitan corregir errores y agregar funciones sin afectar al resto del sistema.
+
+4.El flujo request-response en Django es el ciclo básico de comunicación donde un cliente envía una petición HTTP al servidor y este procesa la información
+para devolver un resultado. Tiene diferentes fases:
+Solicitud: El usuario envía datos como una URL o un formulario y Django lo convierte en un objeto HttpRequest
+Middleware de entrada: Hay filtros que captan la solicitud para aplicar seguridad o autenticación.
+Enrutador: Lee la URL solicitada y busca la función de vista que le corresponde
+Vista: Procesa los datos, consulta la base de datos y genera una respuesta.
+Middleware de salida: Analiza el objeto de respuesta antes de enviarlo a la red.
+Respuesta: Django crea un objeto HttpResponse que el servidor web entrega al cliente
+
+5.Un ORM (Object-Relational Mapping, o Mapeo Objeto-Relacional) es una técnica de programación que permite interactuar con bases de datos relacionales utilizando objetos de un lenguaje de programación orientado a objetos, en lugar de escribir consultas SQL directamente. 
+Actúa como un puente entre la lógica de tu aplicación y la base de datos subyacente.
+
+6.Las plantillas de Django son una parte fundamental del marco de trabajo Django. 
+Le permiten separar la presentación visual de su sitio web del código subyacente. 
+Una plantilla contiene las partes estáticas del resultado HTML que desea y una sintaxis especial que describe cómo se insertará el contenido dinámico.
+
+8.Primero se debe instalar Python, y despues se debe instalar el Django, poniendo en la terminal python -m pip install Django
+
+https://profile.es/blog/django-caracteristicas-y-funcionalidades/
+https://www.desarrollolibre.net/blog/django/el-patron-de-diseno-mtv-en-django-y-su-relacion-con-el-mvc
+https://www.w3schools.com/django/django_create_app.php
+https://medium.com/@sarthaksx/django-request-response-cycle-2626e9e8606e
+https://www.aprender21.com/blog/que-es-orm-mapeo-objeto-relacional
+https://blog.jetbrains.com/es/pycharm/2025/06/la-guia-definitiva-de-las-plantillas-de-django/
+https://docs.djangoproject.com/en/6.1/topics/install/#installing-official-release
